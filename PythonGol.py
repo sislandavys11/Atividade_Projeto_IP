@@ -1,7 +1,7 @@
 import GravadorDeAposta
 
 
-def opcoescadrasto():
+def opcoescadastro():
     print("MENU \n")
     print("Escolha uma Opção: \n")
     print("1. Cadastrar time")
@@ -19,14 +19,14 @@ def opcoescadrasto():
     print("13. Sair \n")
 
 
-def cadrastartime(times):
+def cadastrartime(times):
     print("CADRASTO NOVO TIME")
     timeNovo = str.upper(input("Digite um time: \n"))
     times.append(timeNovo)
     print(times)
 
 
-def cadrastarjogo(jogos):
+def cadastrarjogo(jogos):
     print("CADRASTO JOGO")
     time1 = str.upper(input("Digite nome do primeiro time: \n"))
     gols1 = int(input("Digite a quantidade de gols do primeiro time: \n"))
@@ -35,14 +35,14 @@ def cadrastarjogo(jogos):
     jogos.append([time1, gols1, time2, gols2])
 
 
-def cadrastoapostador(apostadores):
-    print("CADRASTO APOSTADOR")
+def cadastroapostador(apostadores):
+    print("CADASTRO APOSTADOR")
     nome = str.upper(input("Digite o nome do apostador: \n"))
     apostadores.append(nome)
 
 
 def cadrastaraposta(apostas):
-    print("CADRASTAR APOSTA")
+    print("CADASTRAR APOSTA")
     nome = str.upper(input("Digite o seu nome: \n"))
     time1 = str.upper(input("Digite nome do primeiro time: \n"))
     gols1 = int(input("Digite a quantidade de gols do primeiro time: \n"))
@@ -122,16 +122,16 @@ apostadores = GravadorDeAposta.recuperaApostadores()
 apostas = GravadorDeAposta.recuperaApostas()
 sair = False
 while(sair == False):
-         opcoescadrasto() 
+         opcoescadastro() 
          opcao = int(input())
          if(opcao == 1):
-             cadrastartime(times)
+             cadastrartime(times)
          elif(opcao == 2):
-             cadrastarjogo(jogos)
+             cadastrarjogo(jogos)
          elif(opcao == 3):
-             cadrastoapostador(apostadores)
+             cadastroapostador(apostadores)
          elif(opcao == 4):
-             cadrastaraposta(apostas)
+             cadastraraposta(apostas)
          elif(opcao == 5):
              valordaaposta(valoraposta)
          elif(opcao == 6):
