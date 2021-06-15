@@ -20,14 +20,14 @@ def opcoescadastro():
 
 
 def cadastrartime(times):
-    print("CADRASTO NOVO TIME")
+    print("CADASTRO NOVO TIME")
     timeNovo = str.upper(input("Digite um time: \n"))
     times.append(timeNovo)
     print(times)
 
 
 def cadastrarjogo(jogos):
-    print("CADRASTO JOGO")
+    print("CADASTRO JOGO")
     time1 = str.upper(input("Digite nome do primeiro time: \n"))
     gols1 = int(input("Digite a quantidade de gols do primeiro time: \n"))
     time2 = str.upper(input("Digite nome do segundo time: \n"))
